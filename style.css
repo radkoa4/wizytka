@@ -1,0 +1,100 @@
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    color: rgb(182, 75, 75);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+p{
+    align-items: center;
+    align-content: center;
+
+}
+
+.box {
+    color: black;
+    width: 200px;
+    height: 3000px;
+    opacity: 1;
+
+
+
+}
+
+.pbox {
+    height: auto;
+    width: auto;
+    color:rgb(136, 194, 44);
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+
+}
+
+.bg{
+animation: bg 120s linear infinite;
+background: url(panorama.jpg) repeat-x center left;
+
+height: 100%;
+position: absolute;
+background-size: 2000px;
+width: 4500px;
+opacity: 0.5;
+z-index: -1;
+}
+
+.navbar{
+    display: flex;
+    /* flex-wrap:; */
+    justify-content: space-around;
+    width: 100%;
+    
+
+    
+
+
+}
+
+.navbox{
+    height: 45px;
+    width: 25vw;
+    background-color: black;
+    border-right-style: solid;
+    border-right-color: rgba(51, 48, 48, 0.425);
+    align-content: flex-start;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+@keyframes show {
+    0% {
+        margin-top: -268px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: -300px;
+        opacity: 1;
+    }
+}
+
+@keyframes bg {
+
+    
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -1500px;
+    }
+}
